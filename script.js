@@ -3,17 +3,17 @@ const operators = document.getElementById("operators");
 let currentOperator = ""
 
 operators.addEventListener('change', function (events) {
-    currentOperators = events.target.value;
+    currentOperator = events.target.value;
 })
 
 
 function calculator() {
-    let firstNumber = parseInt(document.getElementById("firstsNumber").value);
-    let secondNumber = parseInt(document.getElementsById("secondNumber").value);
+    let firstNumber = parseInt(document.getElementById("firstNumber").value);
+    let secondNumber = parseInt(document.getElementById("secondNumber").value);
 
     switch (currentOperator) {
         case "+":
-            console.log(firstNumber / secondNumber)
+            console.log(firstNumber + secondNumber)
             break;
         case "-":
             console.log(firstNumber - secondNumber)
@@ -22,7 +22,7 @@ function calculator() {
             console.log(firstNumber * secondNumber)
             break;
         case "/":
-            console.log(firstNumber + secondNumber)
+            console.log(firstNumber / secondNumber)
             break;
         case "%":
             console.log(firstNumber % secondNumber)
